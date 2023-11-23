@@ -17,10 +17,14 @@ repositories {
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter'
-    // Kafka Dependencies
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    // Kafka
     implementation 'org.springframework.kafka:spring-kafka:3.0.12'
     implementation 'org.apache.kafka:kafka-streams:3.6.0'
-
+    //lombok
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    // test
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 

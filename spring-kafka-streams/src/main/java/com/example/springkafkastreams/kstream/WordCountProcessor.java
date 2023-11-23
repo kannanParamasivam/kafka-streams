@@ -4,6 +4,7 @@ package com.example.springkafkastreams.kstream;
 import org.apache.kafka.common.serialization.Serde;
 import org.apache.kafka.common.serialization.Serdes;
 import org.apache.kafka.streams.StreamsBuilder;
+import org.apache.kafka.streams.TopologyDescription;
 import org.apache.kafka.streams.kstream.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -29,4 +30,5 @@ public class WordCountProcessor {
                 .peek((key, value) -> System.out.println("KTable values: " + "key: " + key + " value: " + value))
                 .to("word-count-output", Produced.with(stringSerDe, Serdes.Long()));
     }
+
 }
