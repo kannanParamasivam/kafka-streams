@@ -1,10 +1,10 @@
-package com.example.springkafkastreams;
+package com.example.springcloudkafkaprocessorapi;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringKafkaStreamsApplicationTests {
+class ApplicationTests {
 
     @Test
     void contextLoads() {
